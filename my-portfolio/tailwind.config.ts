@@ -12,8 +12,27 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'grained': 'url("/bg.svg")',
+        'box': 'url("/boxes.svg")',
+        'dot': 'url("/dot.svg")',
+      },
+      colors: {
+        background: '#0D1321',
+        primaryBackground: '#0D1321',
+        secondaryBackground: '#1D2D44',
+        tertiaryBackground: '#3E5C76',
+        primary: '#F0EBD8',
+        secondary: '#748CAB',
+      },
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
       },
     },
+    screens: {
+      'sm': '320px',
+      'md': '600px',
+      'lg': '1200px',
+    }
   },
   plugins: [],
 };
