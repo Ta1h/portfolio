@@ -30,8 +30,8 @@ const config: Config = {
     },
     screens: {
       'sm': '320px',
-      'md': '600px',
-      'lg': '1200px',
+      'md': '768px',
+      'lg': '1024px',
     }
   },
   plugins: [],
