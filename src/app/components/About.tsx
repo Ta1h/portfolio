@@ -103,6 +103,11 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+
+                {/** achivements */}
+
+                {/** Comments section about the portfolio  */}
+
             </div>
         </div>
     )

@@ -41,7 +41,7 @@ const Works = () => {
                                     Responsibilities:
                                 </p>
                                 <ul className='list-disc list-inside space-y-1'>
-                                    <li>Developed and maintained the company's website</li>
+                                    <li>Developed and maintained the company&apos;s website</li>
                                     <li>Collaborated with the team to create a responsive design</li>
                                     <li>Optimized the website for SEO</li>
                                 </ul>
@@ -73,7 +73,7 @@ const Works = () => {
                                     Responsibilities:
                                 </p>
                                 <ul className='list-disc list-inside space-y-1'>
-                                    <li>Developed and maintained the company's website</li>
+                                    <li>Developed and maintained the company&apos;s website</li>
                                     <li>Collaborated with the team to create a responsive design</li>
                                     <li>Optimized the website for SEO</li>
                                 </ul>
