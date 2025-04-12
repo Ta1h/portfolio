@@ -6,7 +6,7 @@ import Works from './components/Works'
 
 const page = () => {
   return (
-    <main className="flex-col items-center w-full">
+    <main className="flex-col items-center">
       <Navbar />
       <Hero />
       <About />
