@@ -1,3 +1,4 @@
+import { ReactLenis } from "@/app/utils/lenis";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -16,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <body className={inter.className}>{children}</body>
+      <ReactLenis root>
+        <body className={inter.className}>{children}</body>
+      </ReactLenis>
     </html>
   );
 }

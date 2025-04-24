@@ -16,7 +16,7 @@ const details = [
 
 const Footer = () => {
     return (
-        <div id="Footer" className="bg-secondaryBackground ">
+        <div id="Footer" className="bg-secondaryBackground sm:pt-10 sm:pb-6">
             <div className="sm:p-5 flex justify-center items-center col-span-3">
                 <div className="text-center space-y-4">
                     <h1 className="sm:text-3xl text-4xl font-medium font-roboto text-secondary tracking-wide">Keep in touch</h1>
@@ -29,7 +29,6 @@ const Footer = () => {
                     <div key={index} className="sm:p-3 grid grid-rows-2 p-4 rounded-xl drop-shadow-1xl h-min bg-gray-700 text-sm">
                         <p className="text-gray-100 font-semibold">{detail.name}</p>
                         <p className="font-light text-gray-200">{detail.contact}</p>
-                        <div></div>
                     </div>
                 ))}
             </div>

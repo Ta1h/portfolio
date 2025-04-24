@@ -123,7 +123,7 @@ const About = () => {
                                 {backEnd.map((skill, index) => (
                                     <AnimateUp key={index}>
                                         <div
-                                            className="bg-grained p-2 flex justify-start items-center s`pace-x-2 sm:text-xl lg:text-3xl "
+                                            className="bg-grained p-2 flex justify-start items-center space-x-2 sm:text-xl lg:text-3xl "
                                             key={index}
                                         >
                                             <p className={skill.color}>

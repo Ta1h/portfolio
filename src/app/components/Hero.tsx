@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { AnimateUp } from '../utils/AnimateUp'
 
 const Hero = () => {
-  const title = <p className="sm:ml-1 sm:font-bold lg:font-semibold lg:ml-3 text-secondary ">Jr. Web Developer</p>
+  const title = <p className="sm:ml-1 sm:font-bold lg:font-semibold lg:ml-3 text-secondary ">Software Developer</p>
 
   return (
     <div className="lg:container lg:flex lg:justify-center lg:py-48 sm:py-10 sm:px-5">
