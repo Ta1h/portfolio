@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { capstone, intern } from '../data/skills'
+import { first_company, intern } from '../data/skills'
 
 const Works = () => {
 
@@ -20,13 +20,13 @@ const Works = () => {
                         <div className=' order-3 space-y-8'>
                             <div className='space-y-2'>
                                 <h1 className='sm:text-xl sm:pt-3 text-2xl font-medium tracking-wide '>
-                                    Front End Developer Intern
+                                    Associate Software Developer 
                                 </h1>
                                 <h1 className='sm:text-lg text-xl italic text-secondary'>
-                                    On Pal Express IT Solution Inc.
+                                    Northeast Business Solutions
                                 </h1>
                                 <h1 className=' text-secondary'>
-                                    Feb 2024 - May 2024
+                                    July 2024 - Present
                                 </h1>
                             </div>
                             <div className='flex flex flex-wrap gap-2 space-x-1'>
@@ -41,9 +41,11 @@ const Works = () => {
                                     Responsibilities:
                                 </p>
                                 <ul className='sm:text-sm list-disc list-inside space-y-1'>
-                                    <li>Developed and maintained the company&apos;s website</li>
-                                    <li>Collaborated with the team to create a responsive design</li>
-                                    <li>Optimized the website for SEO</li>
+                                    <li>Developed new modules and features for HRM, Time Managemeng, and Payroll Systems</li>
+                                    <li>Fixed bugs across the frontend, backend, and database SQL</li>
+                                    <li>Improved performance and reliability through code optimization and refactoring</li>
+                                    <li>Collaborated with developers to enhance existing modules and add new functionalities</li>
+                                    <li>Contributed to maintaining clean, scalable, and efficient code across projcets</li>
                                 </ul>
                             </div>
                         </div>
@@ -55,17 +57,17 @@ const Works = () => {
                             </div>
                             <div className='space-y-2'>
                                 <h1 className='sm:text-xl text-2xl font-medium tracking-wide '>
-                                    Full Stack Web Developer
+                                    Web Developer Intern
                                 </h1>
                                 <h1 className='sm:text-lg text-xl italic text-secondary'>
-                                    Capstone Project
+                                    On Pal Express IT Solutions Inc.
                                 </h1>
                                 <h1 className=' text-secondary'>
-                                    Aug 2023 - Dec 2023
+                                    February 2024 - May 2024
                                 </h1>
                             </div>
                             <div className='flex flex-wrap gap-2 lg:space-x-3'>
-                                {capstone.map((skill, index) => (
+                                {first_company.map((skill, index) => (
                                     <div key={index}>
                                         <skill.icon className={`sm:text-xl text-2xl ${skill.color}`} />
                                     </div>
@@ -76,9 +78,10 @@ const Works = () => {
                                     Responsibilities:
                                 </p>
                                 <ul className='sm:text-sm list-disc list-inside space-y-1'>
-                                    <li>Developed and maintained the company&apos;s website</li>
-                                    <li>Collaborated with the team to create a responsive design</li>
-                                    <li>Optimized the website for SEO</li>
+                                    <li>Innovate using React.js and Material UI for better design and smooth user transaction</li>
+                                    <li>Developed a dynamic meeting page that resembles zoom for inspiration for future company use</li>
+                                    <li>Design and developed a dynamic course page and quiz forms for users with admin panel</li>
+                                    <li>Utilized API&apos;s using Reach Hooks for data integration and management</li>
                                 </ul>
                             </div>
                         </div>

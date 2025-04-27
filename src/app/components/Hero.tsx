@@ -1,8 +1,9 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { AnimateUp } from '../utils/AnimateUp'
 
 const Hero = () => {
-  const title = <p className="sm:ml-1 sm:font-bold lg:font-semibold lg:ml-3 text-secondary ">Software Developer</p>
+  const title = <p className="sm:ml-1 sm:font-bold lg:font-semibold lg:ml-3 text-secondary ">Web Developer 💻</p>
 
   return (
     <div className="lg:container lg:flex lg:justify-center lg:py-48 sm:py-10 sm:px-5">
@@ -58,17 +59,21 @@ const Hero = () => {
         <AnimateUp>
           {/* Description */}
           <p className="tracking-wider font-light text-gray-300 sm:text-sm md:text-base sm:mt-5 lg:mt-0">
-            dedicated to deliver seamless online experiences <br />through innovative design and clean, efficient code.
+            dedicated to deliver seamless online experiences <br />through innovative design and clean, efficient code. ✨
           </p>
         </AnimateUp>
 
         {/* Links */}
         <div className='flex py-5 space-x-3'>
           <AnimateUp>
-            <Image src="/linkedinIcon.png" width={30} height={20} alt='linkedin' />
+            <Link href='https://www.linkedin.com/in/ralph-ta-oc-9505a02a1/'> 
+              <Image src="/linkedinIcon.png" width={30} height={20} alt='https://www.linkedin.com/in/ralph-ta-oc-9505a02a1/' />
+            </Link>
           </AnimateUp>
           <AnimateUp>
-            <Image src="/githubIcon.png" width={30} height={30} alt='github' />
+            <Link href="https://github.com/Ta1h">
+              <Image src="/githubIcon.png" width={30} height={30} alt='https://github.com/Ta1h' />
+            </Link>
           </AnimateUp>
         </div>
       </div>

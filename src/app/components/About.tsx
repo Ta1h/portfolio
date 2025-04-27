@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { backEnd, frontEnd, others } from "../data/skills";
+import { databases, Frameworks, programming_languages, styling, tools } from "../data/skills";
 import { AnimateLeft, AnimateUp } from "../utils/AnimateUp";
 import Quote from "./Quote";
 
@@ -16,7 +16,7 @@ const About = () => {
                         <div className="lg:hidden sm:p-3 lg:p-0 space-y-4">
                             <h1 className="text-3xl tracking-wider font-serif">Who am I?</h1>
                             <p className="sm:pb-5 text-sm tracking-wide leading-relaxed text-gray-400">
-                                Hello there my name is Ralph C. Ta-oc, I graduated at
+                                Hello there👋 my name is Ralph C. Ta-oc, I graduated at
                                 Bulacan State University with a degree in Information Technology.
                             </p>
                         </div>
@@ -49,8 +49,8 @@ const About = () => {
                             Who am I?
                         </h1>
                         <p className="tracking-wide leading-relaxed text-gray-400">
-                            Hello there my name is Ralph C. Ta-oc, I graduated at
-                            Bulacan State University with a degree in Information Technology.
+                            Hello there 👋, my name is Ralph C. Ta-oc, I graduated at
+                            Bulacan State University with a degree in Information Technology. 
                             <br />
                             <br />
                             During my internship at On Pal Express, I worked on projects that
@@ -81,23 +81,23 @@ const About = () => {
 
                 {/** Skills*/}
                 <div className="sm:pt-10 p-5 col-span-2 text-center">
-                    <div className="bg-grained sm:pb-5 lg:p-8">
+                    <div className="bg-grained sm:pb-12 lg:p-8">
                         <h1 className="sm:text-2xl text-3xl tracking-wider font-serif ">
                             What I can contribute.
                         </h1>
                         <p className="sm:text-sm text-gray-400 tracking-wider">
-                            Here are some of the technologies I use to develop websites.
+                            Here are some of the technologies I use to develop websites.🤔
                         </p>
                     </div>
 
                     <div className="grid grid-cols-2 gap-5 ">
-                        {/** Front-End */}
+                        {/** Proramming Languages */}
                         <div className="bg-grained grid grid-cols-2 sm:col-span-2 lg:col-span-1 gap-5 text-start lg:p-10 items-center justify-center ">
                             <h1 className="sm:text-xl col-span-3 text-secondary text-2xl tracking-wide w-full text-center">
-                                Front end
+                                Programming Languages✒️
                             </h1>
                             <div className="grid grid-cols-2 sm:col-span-3 min-w-max">
-                                {frontEnd.map((skill, index) => (
+                                {programming_languages.map((skill, index) => (
                                     <AnimateUp key={index}>
                                         <div
                                             className="bg-grained p-2 flex justify-start items-center space-x-2 sm:text-xl lg:text-3xl "
@@ -114,13 +114,13 @@ const About = () => {
                             </div>
                         </div>
 
-                        {/** Back-End */}
+                        {/** Frameworks */}
                         <div className="bg-grained grid grid-cols-3 sm:col-span-2 lg:col-span-1 gap-5 text-start lg:p-10">
                             <h1 className="sm:text-xl col-span-3 text-secondary text-2xl text-center tracking-wide ">
-                                Back end
+                                Frameworks🧩
                             </h1>
                             <div className="grid grid-cols-2 sm:col-span-3 min-w-max">
-                                {backEnd.map((skill, index) => (
+                                {Frameworks.map((skill, index) => (
                                     <AnimateUp key={index}>
                                         <div
                                             className="bg-grained p-2 flex justify-start items-center space-x-2 sm:text-xl lg:text-3xl "
@@ -137,13 +137,59 @@ const About = () => {
                             </div>
                         </div>
 
-                        {/** Others */}
+                        {/** Databases */}
                         <div className="bg-grained grid grid-cols-5 col-span-2 gap-6 text-start lg:p-10">
                             <h1 className="sm:text-xl col-span-5 text-secondary text-2xl tracking-wide text-center ">
-                                Others
+                                Databases💾
                             </h1>
                             <div className="grid grid-cols-2 sm:col-span-5 min-w-max">
-                                {others.map((skill, index) => (
+                                {databases.map((skill, index) => (
+                                    <AnimateUp key={index}>
+                                        <div
+                                            className="bg-grained p-2 flex justify-start items-center space-x-2 sm:text-xl lg:text-3xl "
+                                            key={index}
+                                        >
+                                            <p className={skill.color}>
+                                                {" "}
+                                                <skill.icon />{" "}
+                                            </p>
+                                            <p className="text-base text-gray-500"> {skill.name} </p>
+                                        </div>
+                                    </AnimateUp>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/** Styling */}
+                        <div className="bg-grained grid grid-cols-5 col-span-2 gap-6 text-start lg:p-10">
+                            <h1 className="sm:text-xl col-span-5 text-secondary text-2xl tracking-wide text-center ">
+                                Styling🎨
+                            </h1>
+                            <div className="grid grid-cols-2 sm:col-span-5 min-w-max">
+                                {styling.map((skill, index) => (
+                                    <AnimateUp key={index}>
+                                        <div
+                                            className="bg-grained p-2 flex justify-start items-center space-x-2 sm:text-xl lg:text-3xl "
+                                            key={index}
+                                        >
+                                            <p className={skill.color}>
+                                                {" "}
+                                                <skill.icon />{" "}
+                                            </p>
+                                            <p className="text-base text-gray-500"> {skill.name} </p>
+                                        </div>
+                                    </AnimateUp>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/** Tools */}
+                        <div className="bg-grained grid grid-cols-5 col-span-2 gap-6 text-start lg:p-10">
+                            <h1 className="sm:text-xl col-span-5 text-secondary text-2xl tracking-wide text-center ">
+                                Tools🛠️
+                            </h1>
+                            <div className="grid grid-cols-2 sm:col-span-5 min-w-max">
+                                {tools.map((skill, index) => (
                                     <AnimateUp key={index}>
                                         <div
                                             className="bg-grained p-2 flex justify-start items-center space-x-2 sm:text-xl lg:text-3xl "
